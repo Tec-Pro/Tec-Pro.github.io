@@ -1,212 +1,385 @@
 <!DOCTYPE html>
-<html lang='es'>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
 <head>
-
-	<meta charset='UTF-8'>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0">
-	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	  <script type="text/javascript" src='js/jquery.js'></script>
-	  <script type="text/javascript" src='js/bootstrap.min.js'></script>
-
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-	  <style type="text/css">
-
-		html,body{height: 100%;}
-
-		body,.container{
-			padding-top: 50px;
-		}
-
-	.fondogris{background-color: #eee; }
-
-	.foo { background-color:#eee; border: 1px solid #888; border-radius: 70%;}
-
-	  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops by Peter Finlan" />
+	<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
+	<meta name="author" content="Peter Finlan" />
+	<!-- Bootstrap -->
+	<script src="js/modernizr.custom.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/flickity.css" rel="stylesheet" >
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/queries.css" rel="stylesheet">
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 	<title>Tec-Pro</title>
-	<link rel="icon" href="i/icontp.png" />	
+	<link rel="icon" href="img/icontp.png" />
 </head>
+
 <body>
-	<div class="container-fluid">
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style = "-webkit-backface-visibility: hidden">
-				<div class="container-fluid">
-					<div class='navbar-header'>
-						<a class="navbar-brand" href="#">
-					        <img  alt="Tec-Pro" src="i/tp2.png">
-					    </a>
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-							<span class='sr-only'></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse" id="navbar-1">
-						<ul class="nav navbar-nav pull-right">
-							 <li><a href="#quienessomos">¿Quiénes somos?</a></li>
-				             <li><a href="#quehacemos">¿A qué nos dedicamos?</a></li>
-				             <li><a href="#trabajos">Aplicaciones y Productos</a></li>
-				             <li><a href="#contacto">Contacto</a></li>
-				             <li><a href="https://www.facebook.com/profile.php?id=673196096031342"><img class='img-responsive' src="i/facebook.png"></a></li>
-						</ul>
-					</div>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- open/close -->
+
+<header>
+	<section class="hero">
+		<div class="texture-overlay"></div>
+		<div class="container">
+			<div class="row nav-wrapper">
+				<div class="col-md-6 col-sm-6 col-xs-6 text-left">
+					<a href="#"><img src="img/icontp.png" alt="TecPro Logo"></a>
 				</div>
-			</nav>
-		</header>
-	</div>
-	<div class="container-fluid">
-	<section class='main row'>
-		<article class='col-xs-12'>
-			<img class='img-responsive 'src="i/principal.jpg">
-		</article>
-	</section> 
-	<br>
-	<div class="foo"></div>
-	<div id="cbp-so-scroller" class="cbp-so-scroller">
-		<section class='container cbp-so-section' id='quienessomos'>
-			<section class='main row'>
-				<article class='col-xs-12 '>
-					<h1 class='text-center'>¿Quiénes somos?</h1>
-					<br>
-					<article class='col-xs-12 cbp-so-side cbp-so-side-left'>
-						<img class='img-responsive center-block' src="i/quienessomos.jpg">
-						<br>
-						<br>
-					</article>
-					<article class='col-xs-12 cbp-so-side cbp-so-side-right'>
-						<p >Somos un grupo de estudiantes de la Universidad Nacional de Río Cuarto que decidimos crear nuestro propio emprendimiento con el objetivo de desarrollar las mejores soliciones infromaticas a medida para problemas reales.</p>
-						<p>Administra tu negocio facilmente, sin esfuerzos innecesarios. Basta de lapiz y papel.</p>
-						<p>Organizar tu negocio nunca fue tan fácil.</p>
-						</p>
-					</article>
-					<br>
-					<br>
-				</article>
-			</section>
-		</section>
-
-		<div class='fondogris'>
-		<div class="foo"></div>
-			<section class="container" id='quehacemos'>
-				<h1 class='text-center'>¿Qué desarrollamos?</h1>
-				<section class='cbp-so-section' >
-					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-left'>
-						<h3 class='text-center'> Desktop app</h3>
-						<article class='col-xs-12 '>
-							<p><img class='img-responsive center-block' src="i/PC.png"><p>
-						</article>
-						<p>Application software is a set of one or more programs designed to carry out operations for a specific application.</p>
-					</article>
-					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-right'>
-						<h3 class='text-center'> Android app</h3>
-						<article class='col-xs-12'>
-							<p><img class='img-responsive center-block' src="i/android.png"><p>
-						</article>
-						<p>El Desarrollo de Programas para Android se hace habitualmente con el lenguage de programación similar a Java2 y el conjunto de herramientas de desarrollo SDK.</p>
-					</article>
-				</section>
-				<section class='cbp-so-section' >
-					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-left'>
-						<h3 class='text-center'> Graphic Design</h3>
-						<article class='col-xs-12 '>
-							<p><img class='img-responsive center-block' src="i/PC.png"><p>
-						</article>
-						<p>Application software is a set of one or more programs designed to carry out operations for a specific application.</p>
-					</article>
-					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-right'>
-						<h3 class='text-center'> Paginas Web</h3>
-						<article class='col-xs-12'>
-							<p><img class='img-responsive center-block' src="i/web.png"><p>
-						</article>
-						<p>operativo, así como a la facilidad para actualizar y mantener aplicaciones web sin distribuir e instalar software a miles de usuarios potenciales.</p>
-					</article>
-				</section>
-				<!--<section class='container cbp-so-section'>
-
-				</section>-->
-			</section>
+				<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+					<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+				</div>
+			</div>
+			<div class="row hero-content">
+				<div class="col-md-12">
+					<h1 class="animated fadeInDown"> Tec-Pro</h1>
+					<h3 class="animated fadeInUp"> Soluciones de diseño y software</h3>
+				</div>
+			</div>
 		</div>
-		<div class="foo"></div>
-		<section class='container' id='trabajos'>
-			<section class='row' id='cliente1'>
-				<h1 class='text-center'>Trabajos</h1>
-			</section>
-			<section class=" cbp-so-section">
-				<article class='row  cbp-so-side cbp-so-side-left'>
-					<div class='col-xs-3 col-md-4'>
-						<img class='img-responsive' src="i/cliente1.jpg">
+	</section>
+</header>
+<!-- -----------Desarrollo------------------------- -->
+<section class="features-list" id="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="col-md-4 feature-1 wp2">
+					<div class="feature-icon">
+						<img class='img-responsive center-block' src="img/PC.png">
 					</div>
-					<div class='col-xs-9 col-md-8 text-left'>
-						<h3>Lubricentro 'El Cacique'</h3>
-						<p><strong>Direccion:</strong> Blumetti 375,Cinco Saltos</p>
-						<p><strong>Telefono:</strong> 0299 498-3444</p>
+					<div class="feature-content">
+						<h1>Desktop App</h1>
+						<p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
+						<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
 					</div>
-				</article>
-				<br>
-				<article class='row  cbp-so-side cbp-so-side-right'>
-					<div class='col-xs-3 col-md-4'>
-						<img class='img-responsive' src="i/cliente2.jpg">
+				</div>
+				<div class="col-md-4 feature-2 wp2 delay-05s">
+					<div class="feature-icon">
+						<img class='img-responsive center-block' src="img/android.png">
 					</div>
-					<div class='col-xs-9 col-md-8 text-left'>
-						<h3>C & L Joyas</h3>
-						<p><strong>Direccion:</strong> Santiago del estero 1800, Río Cuarto</p>
-						<p><strong>Telefono:</strong> 154384533</p>
+					<div class="feature-content">
+						<h1>Android App</h1>
+						<p>El Desarrollo de Programas para Android se hace habitualmente con el lenguage de programación similar a Java2 y el conjunto de herramientas de desarrollo SDK.</p>
+						<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
 					</div>
-				</article>
-			</section>
-		</section>
+				</div>
+				<div class="col-md-4 feature-3 wp2 delay-1s">
+					<div class="feature-icon">
+						<img class='img-responsive center-block' src="img/web.png">
+					</div>
+					<div class="feature-content">
+						<h1>Web Pages</h1>
+						<p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply <a href="http://peterfinlan.com/">buy me a beer</a>. </p>
+						<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</div>
-	<br>
-	<!--<div class='fondogris'>
-	<div class="foo"></div>
-	<div class='container' id='contacto'>		
-	<section class='row col-xs-12 '>
-		<article>
-			<h1 class='text-center'> Contacto</h1>
-			<form action='' class='form-horizontal'>
-				<div class='form-group'>
-				<label class='control-label col-xs-1'for='nombre'>Nombre:</label>
-				<div class='col-xs-11'>
-					<input class='form-control col-xs-11' type='text' id='nombre' placeholder='Nombre:' required='true'> 
-				</div>
-				</div>
+</section>
+<section class="features-intro">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 nopadding features-intro-img">
+				<div class="features-bg1">
+					<div class="texture-overlay"></div>
+					<div class="features-img wp1">
 
-				<div class='form-group'>
-				<label class='control-label col-xs-1' for='telefono'>Telefono:</label>
-				<div class='col-xs-11'>
-					<input class='form-control col-xs-11' type='text' id='telefono' placeholder='Numero de telefono:'> 
+					</div>
 				</div>
-				</div>
+			</div>
+			<div class="col-md-6 nopadding">
+				<div class="features-slider">
+					<ul class="slides" id="featuresSlider">
+						<li>
+							<h1>Cosas sobre programas de escritorio</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
-				<div class='form-group'>
-				<label class='control-label col-xs-1' for='mail'>E-mail:</label>
-				<div class='col-xs-11'>
-					<input class='form-control col-xs-11' type='email' id='mail' placeholder='E-mail:' required='true'> 
-				</div>
-				</div>
+						</li>
+						<li>
+							<h1>Explcar cosas sobre android</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
-				<div class='form-group'>
-				<label class='control-label col-xs-1' for='mensaje'>Mensaje:</label>
-				<div class='col-xs-11'>
-						<textarea class='form-control' id='mensaje' placeholder='Descripcion del proyecto:'></textarea>
+						</li>
+						<li>
+							<h1>Cosas sobre programas web</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+						</li>
+					</ul>
 				</div>
-				</div>
-				<button class='btn col-xs-offset-1 btn-default'>Enviar</button>
-			</form>
-		</article>
-		<br>
-	<br>
-	</section>	
+			</div>
+		</div>
 	</div>
-	</div>-->
+</section>
+<!-- -----------WORK------------------------- -->
+<section class="features-list" id="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
 
-	<script src="js/classie.js"></script>
-	<script src="js/cbpScroller.js"></script>
-	<script>
-		new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
-	</script>
+				<div class="col-md-4 feature-1 wp2">
+					<div class="feature-icon">
+						<img class='img-responsive center-block' src="img/cliente1.jpg">
+					</div>
+					<div class="feature-content">
+						<h1>Lubricentro El Cacique</h1>
+						<p>Basdasdasdasdasdasdasd</p>
+						<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4 feature-2 wp2 delay-05s">
+					<div class="feature-icon">
+						<img class='img-responsive center-block' src="img/cliente2.jpg">
+					</div>
+					<div class="feature-content">
+						<h1>C & L Joyas</h1>
+						<p>Basdasdasdasd asdasdasd asdasd asdadadada asdasdasd asdasdasd asdasdas asd</p>
+						<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<section class="features-intro">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 nopadding features-intro-img">
+				<div class="features-bg2">
+					<div class="texture-overlay"></div>
+					<div class="features-img wp1">
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 nopadding">
+				<div class="features-slider">
+					<ul class="slides">
+						<li>
+							<h1>Bla bla bla bla boaboasdasda</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- -----------ABOUT------------------------- -->
+<section class="screenshots-intro" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Nuestro Equipo</h1>
+				<p >Somos un grupo de estudiantes de la Universidad Nacional de Río Cuarto que decidimos crear nuestro propio emprendimiento con el objetivo de desarrollar las mejores soliciones infromaticas a medida para problemas reales.</p>
+				<p>Administra tu negocio facilmente, sin esfuerzos innecesarios. Basta de lapiz y papel.</p>
+				<p>Organizar tu negocio nunca fue tan fácil.</p>
+				<p><a href="#screenshots" class="arrow-btn">See the screenshots! <i class="fa fa-long-arrow-right"></i></a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="screenshots" >
+	<div class="container-fluid">
+		<div class="row">
+			<ul class="grid">
+				<li>
+					<figure>
+						<img src="img/joaco.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/01.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Joaquin Heredia</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/jazu.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/02.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Jacinto Jaimez</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/agus.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/03.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Agustin Bauer</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/tortuga.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/04.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Nicolas Orcasitas</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<ul class="grid">
+				<li>
+					<figure>
+						<img src="img/alan.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/05.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Alan Gonzalez</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/max.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/06.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Max Cejuela</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/enano.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/07.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>Ezequiel sensich</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/quienessomos.jpg" alt="Screenshot 01">
+						<figcaption>
+							<div class="caption-content">
+								<a href="img/large/08.jpg" class="single_image">
+									<i class="fa fa-search"></i><br>
+									<p>In Sydney, Australia</p>
+								</a>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<h1 class="footer-logo">
+					<img src="img/tp.png" alt="Footer Logo Blue">
+				</h1>
+				<p>© TecPro 2015 - <a href="http://tympanus.net/codrops/licensing/">Licence</a></p>
+			</div>
+			<div class="col-md-7">
+				<ul class="footer-nav">
+					<li><a href="#features">Desarrollo</a></li>
+					<li><a href="#work">Trabajos</a></li>
+					<li><a href="#about">El equipo</a></li>
+					<li><a href="#download">Contactanos</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="overlay overlay-boxify">
+	<nav>
+		<ul>
+			<li><a href="#features"><i class="fa"></i>¿Qué desarrollamos?</a></li>
+			<li><a href="#work"><i class="fa"></i>Trabajos</a></li>
+		</ul>
+		<ul>
+
+			<li><a href="#about"><i class="fa"></i>El equipo</a></li>
+			<li><a href="#download"><i class="fa"></i>Contactanos</a></li>
+		</ul>
+	</nav>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/min/toucheffects-min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/retina.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/min/scripts-min.js"></script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
 </body>
 </html>
