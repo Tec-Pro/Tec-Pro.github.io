@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang='es'>
 <head>
+
 	<meta charset='UTF-8'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0,minimum-scale=1.0">
 	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	  <script type="text/javascript" src='js/jquery.js'></script>
 	  <script type="text/javascript" src='js/bootstrap.min.js'></script>
-	  <script type="text/javascript" src='js/funcionalidades.js'></script>
+
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
 	  <style type="text/css">
-		
+
 		html,body{height: 100%;}
 
 		body,.container{
@@ -27,7 +31,7 @@
 <body>
 	<div class="container-fluid">
 		<header>
-			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style = "-webkit-backface-visibility: hidden">
 				<div class="container-fluid">
 					<div class='navbar-header'>
 						<a class="navbar-brand" href="#">
@@ -38,7 +42,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-						</button>						 
+						</button>
 					</div>
 					<div class="collapse navbar-collapse" id="navbar-1">
 						<ul class="nav navbar-nav pull-right">
@@ -48,97 +52,115 @@
 				             <li><a href="#contacto">Contacto</a></li>
 				             <li><a href="https://www.facebook.com/profile.php?id=673196096031342"><img class='img-responsive' src="i/facebook.png"></a></li>
 						</ul>
-					<div>
+					</div>
 				</div>
 			</nav>
-		</header>	
+		</header>
 	</div>
 	<div class="container-fluid">
 	<section class='main row'>
 		<article class='col-xs-12'>
-			<img class='img-responsive' src="i/principal.jpg">
+			<img class='img-responsive 'src="i/principal.jpg">
 		</article>
 	</section> 
 	<br>
 	<div class="foo"></div>
-	<section class='container' id='quienessomos'>	 
-		<section class='main row'>			
-			<article class='col-xs-12'>
-				<h1 class='text-center'>¿Quiénes somos?</h1>
-				<br>
-				<article class='col-xs-12'>
-					<img class='img-responsive center-block' src="i/quienessomos.jpg">
+	<div id="cbp-so-scroller" class="cbp-so-scroller">
+		<section class='container cbp-so-section' id='quienessomos'>
+			<section class='main row'>
+				<article class='col-xs-12 '>
+					<h1 class='text-center'>¿Quiénes somos?</h1>
+					<br>
+					<article class='col-xs-12 cbp-so-side cbp-so-side-left'>
+						<img class='img-responsive center-block' src="i/quienessomos.jpg">
+						<br>
+						<br>
+					</article>
+					<article class='col-xs-12 cbp-so-side cbp-so-side-right'>
+						<p >Somos un grupo de estudiantes de la Universidad Nacional de Río Cuarto que decidimos crear nuestro propio emprendimiento con el objetivo de desarrollar las mejores soliciones infromaticas a medida para problemas reales.</p>
+						<p>Administra tu negocio facilmente, sin esfuerzos innecesarios. Basta de lapiz y papel.</p>
+						<p>Organizar tu negocio nunca fue tan fácil.</p>
+						</p>
+					</article>
 					<br>
 					<br>
 				</article>
-				<p>Somos un grupo de estudiantes de la Universidad Nacional de Río Cuarto que decidimos crear nuestro propio emprendimiento con el objetivo de desarrollar las mejores soliciones infromaticas a medida para problemas reales.</p>
-				<p>Administra tu negocio facilmente, sin esfuerzos innecesarios. Basta de lapiz y papel.</p>
-				<p>Organizar tu negocio nunca fue tan fácil.</p>
-				</p>
-				<br>
-				<br>
-			</article>
+			</section>
 		</section>
-	</section>
-	<div class='fondogris'>
-	<div class="foo"></div>
-	<section class='container' id='quehacemos'>
-	<section class='row ' id='quehacemos'>
-		<h1 class='text-center'>¿Qué desarrollamos?</h1>
-		<article class='col-xs-12 col-md-4'>
-			<h3 class='text-center'> Despock app</h3>
-			<article class='col-xs-12'>
-				<p><img class='img-responsive center-block' src="i/PC.png"><p>
-			</article>
-			<p>Application software is a set of one or more programs designed to carry out operations for a specific application. Application software cannot run on itself but is dependent on system software to execute. Examples of application software include MS Word, MS Excel, a console game, a library management system, a spreadsheet system etc</p>
-		</article>
-		<article class='col-xs-12 col-md-4'>
-			<h3 class='text-center'> Paginas Web</h3>
-			<article class='col-xs-12'>
-				<p><img class='img-responsive center-block' src="i/web.png"><p>
-			</article>
-			<p>operativo, así como a la facilidad para actualizar y mantener aplicaciones web sin distribuir e instalar software a miles de usuarios potenciales. Existen aplicaciones como los webmails, wikis, weblogs, tiendas en línea y la propia Wikipedia que son ejemplos bien conocidos de aplicaciones web.</p>
-		</article>
-		<article class='col-xs-12 col-md-4'>
-			<h3 class='text-center'> Android app</h3>
-			<article class='col-xs-12'>
-				<p><img class='img-responsive center-block' src="i/android.png"><p>
-			</article>
-			<p>El Desarrollo de Programas para Android se hace habitualmente con el lenguage de programación similar a Java2 y el conjunto de herramientas de desarrollo SDK ( SDK, SoftwareDevelopment Kit ), pero hay otras opciones disponibles. En Julio de 2013 existían más de 1.000.000 de aplicaciones contabilizadas para Android, con aproximadamente 25 millardos de descargas.3 4 5 La plataforma Android ha crecido hasta ser una de las preferidas por los desarrolladores para plataformas móviles. Un estudio de junio del 2011 indica que el 67% de los desarrolladores para móviles utilizaban la plataforma, en el momento de su publicación 6 . En el segundo trimestre del 2012, se habían vendido alrededor de105 millones de teléfonos Android, con un porcentaje del 68% de las ventas de teléfonos inteligentes hasta esa fecha. 7</p>
-		</article>
-	</section>
+
+		<div class='fondogris'>
+		<div class="foo"></div>
+			<section class="container" id='quehacemos'>
+				<h1 class='text-center'>¿Qué desarrollamos?</h1>
+				<section class='cbp-so-section' >
+					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-left'>
+						<h3 class='text-center'> Desktop app</h3>
+						<article class='col-xs-12 '>
+							<p><img class='img-responsive center-block' src="i/PC.png"><p>
+						</article>
+						<p>Application software is a set of one or more programs designed to carry out operations for a specific application.</p>
+					</article>
+					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-right'>
+						<h3 class='text-center'> Android app</h3>
+						<article class='col-xs-12'>
+							<p><img class='img-responsive center-block' src="i/android.png"><p>
+						</article>
+						<p>El Desarrollo de Programas para Android se hace habitualmente con el lenguage de programación similar a Java2 y el conjunto de herramientas de desarrollo SDK.</p>
+					</article>
+				</section>
+				<section class='cbp-so-section' >
+					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-left'>
+						<h3 class='text-center'> Graphic Design</h3>
+						<article class='col-xs-12 '>
+							<p><img class='img-responsive center-block' src="i/PC.png"><p>
+						</article>
+						<p>Application software is a set of one or more programs designed to carry out operations for a specific application.</p>
+					</article>
+					<article class='col-xs-12 col-md-4 cbp-so-side cbp-so-side-right'>
+						<h3 class='text-center'> Paginas Web</h3>
+						<article class='col-xs-12'>
+							<p><img class='img-responsive center-block' src="i/web.png"><p>
+						</article>
+						<p>operativo, así como a la facilidad para actualizar y mantener aplicaciones web sin distribuir e instalar software a miles de usuarios potenciales.</p>
+					</article>
+				</section>
+				<!--<section class='container cbp-so-section'>
+
+				</section>-->
+			</section>
+		</div>
+		<div class="foo"></div>
+		<section class='container' id='trabajos'>
+			<section class='row' id='cliente1'>
+				<h1 class='text-center'>Trabajos</h1>
+			</section>
+			<section class=" cbp-so-section">
+				<article class='row  cbp-so-side cbp-so-side-left'>
+					<div class='col-xs-3 col-md-4'>
+						<img class='img-responsive' src="i/cliente1.jpg">
+					</div>
+					<div class='col-xs-9 col-md-8 text-left'>
+						<h3>Lubricentro 'El Cacique'</h3>
+						<p><strong>Direccion:</strong> Blumetti 375,Cinco Saltos</p>
+						<p><strong>Telefono:</strong> 0299 498-3444</p>
+					</div>
+				</article>
+				<br>
+				<article class='row  cbp-so-side cbp-so-side-right'>
+					<div class='col-xs-3 col-md-4'>
+						<img class='img-responsive' src="i/cliente2.jpg">
+					</div>
+					<div class='col-xs-9 col-md-8 text-left'>
+						<h3>C & L Joyas</h3>
+						<p><strong>Direccion:</strong> Santiago del estero 1800, Río Cuarto</p>
+						<p><strong>Telefono:</strong> 154384533</p>
+					</div>
+				</article>
+			</section>
+		</section>
 	</div>
-	<div class="foo"></div>
-	<section class='container' id='trabajos'>		
-		<section class='row' id='cliente1'>
-			<h1 class='text-center'>Trabajos</h1>
-		</section>
-		<section>
-			<article class='row'>
-				<div class='col-xs-3 col-md-4'>
-					<img class='img-responsive' src="i/cliente1.jpg">
-				</div>
-				<div class='col-xs-9 col-md-8 text-left'>
-					<h3>Lubricentro 'El Cacique'</h3>
-					<p><strong>Direccion:</strong> Blumetti 375,Cinco Saltos</p>
-					<p><strong>Telefono:</strong> 0299 498-3444</p>
-				</div>
-			</article>
-			<br>	
-			<article class='row'>
-				<div class='col-xs-3 col-md-4'>
-					<img class='img-responsive' src="i/cliente2.jpg">
-				</div>
-				<div class='col-xs-9 col-md-8 text-left'></div>
-					<h3>C & L Joyas</h3>
-					<p><strong>Direccion:</strong> Santiago del estero 1800, Río Cuarto</p>
-					<p><strong>Telefono:</strong> 154384533</p>
-				</div>
-			</article>
-		</section>
-	</section>
 	<br>
-	<div class='fondogris'>
+	<!--<div class='fondogris'>
 	<div class="foo"></div>
 	<div class='container' id='contacto'>		
 	<section class='row col-xs-12 '>
@@ -179,6 +201,12 @@
 	<br>
 	</section>	
 	</div>
-	</div>
+	</div>-->
+
+	<script src="js/classie.js"></script>
+	<script src="js/cbpScroller.js"></script>
+	<script>
+		new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+	</script>
 </body>
 </html>
