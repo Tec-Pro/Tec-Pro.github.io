@@ -1,388 +1,311 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops by Peter Finlan" />
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
-        <meta name="author" content="Peter Finlan" />
-        <!-- Bootstrap -->
-        <script src="js/modernizr.custom.js"></script>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/jquery.fancybox.css" rel="stylesheet">
-        <link href="css/flickity.css" rel="stylesheet" >
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/queries.css" rel="stylesheet">
-        <!-- Facebook and Twitter integration -->
-        <meta property="og:title" content=""/>
-        <meta property="og:image" content=""/>
-        <meta property="og:url" content=""/>
-        <meta property="og:site_name" content=""/>
-        <meta property="og:description" content=""/>
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:image" content="" />
-        <meta name="twitter:url" content="" />
-        <meta name="twitter:card" content="" />
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<html lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/4-col-portfolio.css" rel="stylesheet">
+    <link href="css/business-frontpage.css" rel="stylesheet">
+     <link href="css/round-about.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <title>Tec-Pro</title>
-        <link rel="icon" href="img/icontp.png" />
-    </head>
-
-    <body>
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <!-- open/close -->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Tec-Pro</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">Acerca de nosotros wahcin</a></li>
+            <li><a href="#whatwedo">Que hacelga</a></li>
+            <li><a href="#team">Y vo quien so'</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
     <header>
-        <section class="hero">
-            <div class="texture-overlay"></div>
-            <div class="container">
-                <div class="row nav-wrapper">
-                    <div class="col-md-6 col-sm-6 col-xs-6 text-left">
-                        <!-- <a href="#"><img src="img/icontp.png" alt="TecPro Logo"></a>-->
-                        <button onclick="toggleLang()"> <img class="img-icon" id="langIcon" src="img/icontp.png" alt="Change Languaje"></button>
-                     </div>
-                     <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-                         <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
-                     </div>
-                 </div>
-                 <div class="row hero-content">
-                     <div class="col-md-12">
-                         <h1 class="animated fadeInDown" > Tec-Pro</h1>
-                         <h3 class="animated fadeInUp" tkey="slogan"> </h3>
-                     </div>
-                 </div>
-             </div>
-         </section>
-     </header>
-     <!-- -----------Desarrollo------------------------- -->
-    <section class="features-list" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="col-md-4 feature-1 wp2">
-                        <div class="feature-icon">
-                            <img class='img-responsive center-block' src="img/PC.png">
-                        </div>
-                        <div class="feature-content">
-                            <h1>Desktop App</h1>
-                            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 feature-2 wp2 delay-05s">
-                        <div class="feature-icon">
-                            <img class='img-responsive center-block' src="img/android.png">
-                        </div>
-                        <div class="feature-content">
-                            <h1>Android App</h1>
-                            <p>El Desarrollo de Programas para Android se hace habitualmente con el lenguage de programación similar a Java2 y el conjunto de herramientas de desarrollo SDK.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 feature-3 wp2 delay-1s">
-                        <div class="feature-icon">
-                            <img class='img-responsive center-block' src="img/web.png">
-                        </div>
-                        <div class="feature-content">
-                            <h1>Web Pages</h1>
-                            <p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply <a href="http://peterfinlan.com/">buy me a beer</a>. </p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="features-intro">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 nopadding features-intro-img">
-                    <div class="features-bg1">
-                        <div class="texture-overlay"></div>
-                        <div class="features-img wp1">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 nopadding">
-                    <div class="features-slider">
-                        <ul class="slides" id="featuresSlider">
-                            <li>
-                                <h1>Cosas sobre programas de escritorio</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
-                            </li>
-                            <li>
-                                <h1>Explcar cosas sobre android</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
-                            </li>
-                            <li>
-                                <h1>Cosas sobre programas web</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- -----------WORK------------------------- -->
-    <section class="features-list" id="work">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="col-md-4 feature-1 wp2">
-                        <div class="feature-icon">
-                            <img class='img-responsive center-block' src="img/cliente1.jpg">
-                        </div>
-                        <div class="feature-content">
-                            <h1>Lubricentro El Cacique</h1>
-                            <p>Basdasdasdasdasdasdasd</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 feature-2 wp2 delay-05s">
-                        <div class="feature-icon">
-                            <img class='img-responsive center-block' src="img/cliente2.jpg">
-                        </div>
-                        <div class="feature-content">
-                            <h1>C & L Joyas</h1>
-                            <p>Basdasdasdasd asdasdasd asdasd asdadadada asdasdasd asdasdasd asdasdas asd</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="features-intro">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 nopadding features-intro-img">
-                    <div class="features-bg2">
-                        <div class="texture-overlay"></div>
-                        <div class="features-img wp1">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 nopadding">
-                    <div class="features-slider">
-                        <ul class="slides">
-                            <li>
-                                <h1>Bla bla bla bla boaboasdasda</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- -----------ABOUT------------------------- -->
-    <section class="screenshots-intro" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Nuestro Equipo</h1>
-                    <p >Somos un grupo de estudiantes de la Universidad Nacional de Río Cuarto que decidimos crear nuestro propio emprendimiento con el objetivo de desarrollar las mejores soliciones infromaticas a medida para problemas reales.</p>
-                    <p>Administra tu negocio facilmente, sin esfuerzos innecesarios. Basta de lapiz y papel.</p>
-                    <p>Organizar tu negocio nunca fue tan fácil.</p>
-                    <p><a href="#screenshots" class="arrow-btn">See the screenshots! <i class="fa fa-long-arrow-right"></i></a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="screenshots" >
-        <div class="container-fluid">
-            <div class="row">
-                <ul class="grid">
-                    <li>
-                        <figure>
-                            <img src="img/joaco.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/01.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Joaquin Heredia</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/jazu.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/02.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Jacinto Jaimez</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/agus.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/03.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Agustin Bauer</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/tortuga.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/04.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Nicolas Orcasitas</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <ul class="grid">
-                    <li>
-                        <figure>
-                            <img src="img/alan.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/05.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Alan Gonzalez</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/max.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/06.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Max Cejuela</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/enano.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/07.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Ezequiel sensich</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/quienessomos.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/08.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>In Sydney, Australia</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1 class="footer-logo">
-                        <img src="img/tp.png" alt="Footer Logo Blue">
-                    </h1>
-                    <p>© TecPro 2015 - <a href="http://tympanus.net/codrops/licensing/">Licence</a></p>
-                </div>
-                <div class="col-md-7">
-                    <ul class="footer-nav">
-                        <li><a href="#features"  tkey="develops"></a></li>
-                        <li><a href="#work"  tkey="work"></a></li>
-                        <li><a href="#about"  tkey="about"></a></li>
-                        <li><a href="#download"  tkey="contact"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="overlay overlay-boxify">
-        <nav>
-            <ul>
-                <li><a href="#features" tkey="develops" ><i class="fa"></i></a></li>
-                <li><a href="#work" tkey="work"><i class="fa"></i></a></li>
-            </ul>
-            <ul>
-
-                <li><a href="#about" tkey="about"><i class="fa"></i></a></li>
-                <li><a href="#download" tkey="contact"><i class="fa"></i></a></li>
-            </ul>
-        </nav>
+   <div class="wrapper">
+         <img src="portada.png" class="img-responsive" alt="Responsive image">
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/min/toucheffects-min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/flickity.pkgd.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/retina.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/min/scripts-min.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    </header>
+  <!-- Page Content -->
+    <div class="container">
 
-    <script src="lang.js"></script> <!-- for multilanguaje -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-    </body>
+         <!-- Introduction Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" id="about">About Us
+                    <small>It's Nice to Meet You!</small>
+                </h1>
+                <p>Somos una empresa que utiliza la innovación tecnológica aplicada para brindar soluciones a nuestros clientes con el fin de hacer más simple y eficiente su trabajo. Nuestro conocimiento, experiencia, capacidad de trabajo, dedicación y un equipo de profesionales nos permiten generar y mantener una relación transparente y cercana en beneficio de nuestros clientes.
+            </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-8" id="whatwedo">
+                <h2>What We Do</h2>
+                <p> Nuestra misión es entregar un servicio personalizado de alto nivel teniendo siempre en cuenta las necesidades del cliente con el objetivos de satisfacer las necesidades y los deseos inmediatos de nuestros clientes brindando soluciones efectivas.</p>
+                <p> El compromiso con la calidad y satisfacción del cliente es nuestro objetivo más preciado.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Contact Us</h2>
+                <address>
+                    <strong>Start Bootstrap</strong>
+                    <br>3481 Melrose Place
+                    <br>Beverly Hills, CA 90210
+                    <br>
+                </address>
+                <address>
+                    <abbr title="Phone">P:</abbr>(123) 456-7890
+                    <br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
+                </address>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="escritorio.png" alt="">
+                <h2>Marketing Box #1</h2>
+                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="celular.png" alt="">
+                <h2>Marketing Box #2</h2>
+                <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="html.png" alt="">
+                <h2>Marketing Box #3</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+    </div>
+    
+
+     <!-- Page Content -->
+    <div class="container">
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="landingweb.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+
+        <!-- Team Members Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header" id="team">Our Team</h2>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="jazu.png" alt="">
+                <h3>Jazu
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="tortu.png" alt="">
+                <h3>Tortuga
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="DJ.png" alt="">
+                <h3>DJ
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="alan.png" alt="">
+                <h3>Alan
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="joako.png" alt="">
+                <h3>Joako
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="bel.png" alt="">
+                <h3>Belen
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
